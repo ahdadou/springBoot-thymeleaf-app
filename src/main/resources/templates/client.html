@@ -415,7 +415,13 @@
                   </tr>
                 </thead>
                 <tbody>
+                
                   <tr th:each="client:${clients}">
+                    <td>
+    <a id="photoButton" th:href="@{'/img/photos/avatar.jpg'}">
+           <img th:src="@{'/img/photos/avatar.png'}" width="40" height="40">
+     </a>
+ </td>	
                     <td th:text="${client.id}">Id</td>
                     <td th:text="${client.name}">Details</td>
                     <td th:text="${client.phone}">"deleteButton"Name</td>
